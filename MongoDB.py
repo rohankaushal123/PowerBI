@@ -41,8 +41,8 @@ def main():
         try:
             empId.append(i[0]['employeeId'])
             punchIn.append(i[0]['punchIn'])
-            punchOut.append(i[0]['punchOut'])
-            punchOutBy.append(i[0]['punchOutBy'])
+            punchOut.append(i[-1]['punchOut'])
+            punchOutBy.append(i[-1]['punchOutBy'])
             punchInBy.append(i[0]['punchInBy'])
             status.append(j)
         except (KeyError, IndexError):
